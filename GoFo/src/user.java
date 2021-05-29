@@ -1,5 +1,6 @@
 public class user {
     private String name, location, password, phone, email;
+    private int Balance;
 
     public user(String name, String location, String password, String phone, String email) {
         this.name = name;
