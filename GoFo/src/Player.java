@@ -27,5 +27,7 @@ public class Player extends user{
     public void checkMoney(){
         System.out.println("Your money is: "+this.wallet.getMoney());
     }
+     public void bookPlayground(){
 
+     }
 }
