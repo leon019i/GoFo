@@ -8,19 +8,30 @@ public class Team {
 
     String name;
     int teamNumber;
-    ArrayList<user> userArrayList = new ArrayList<user>(11);
+    ArrayList<Player> playerArrayList = new ArrayList<Player>(11);
 
 
     boolean isEmpty() {
-        return false;
-    }
-    boolean isFull() {
-        return false;
-    }
-    void addPlayer(user user1){
-        if (teamNumber>=11) {
-            userArrayList.add(user1);
+        if (playerArrayList.size() == 0) {
+            return true;
+        } else {
+            return false;
         }
     }
+
+    boolean isFull() {
+        if (playerArrayList.size() != 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    void addPlayer(Player player) {
+        if (teamNumber >= 11) {
+            playerArrayList.add(player);
+        }
+    }
+
 
 }

@@ -22,15 +22,13 @@ public class main {
 
     public static void main(String[] args) {
         user user1 =new user("loay","17  st dokki","Password","01098790730","loayfaiz@gmail.com");
-        user user = new user();
+
         boolean flag = true;
         ArrayList<user> userArrayList =new ArrayList<>(5);
         userArrayList.add(user1);
         while (flag) {
             System.out.println(userArrayList);
             int choice;
-            String data;
-            String[] data_;
             String name, location, password, phone, email;
             boolean valid=false;
             Scanner scanner = new Scanner(System.in);
@@ -43,23 +41,32 @@ public class main {
                 phone=scanner.next();
                 location=scanner.next();
                 password=scanner.next();
-                user user3=new user(name,location,password,phone,email);
+                user user3=new user("loay","17  st dokki","Password","01098790730","loayfaiz@gmail.com");
                 userArrayList.add(user3);
-                System.out.println(userArrayList.toString());
-
+                System.out.println(userArrayList);
 
             }else if (choice==2){
                 System.out.println("Enter the email and password\nHint put ',' between the email and password");
                 email=scanner.next();
                 password=scanner.next();
-                for (int i = 0; i<= userArrayList.size(); i++){
-                    if (userArrayList.get(i).getEmail()==email && userArrayList.get(i).getPassword()==password && valid!=true){
-                        valid=true;
-                    }else if (valid){
-                        break;
+//                for (int i = 0; i<= userArrayList.size(); i++){
+//                    if (userArrayList.get(i).getEmail()==email && userArrayList.get(i).getPassword()==password){
+//                        valid=true;
+//                        System.out.println(userArrayList.get(i));
+//                    }else if (valid){
+//                        break;
+//                    }
+//                    else {
+//                        System.out.println("the credentials is not valid");
+//                    }
+//                }
+                for (user userSearch : userArrayList){
+                    if (userSearch.getEmail()==email && userSearch.getPassword()==password){
+                        System.out.println(userSearch);
+                        System.out.println("done");
                     }
                     else {
-                        System.out.println("the credentials is not valid");
+                        System.out.println("failed");
                     }
                 }
 
