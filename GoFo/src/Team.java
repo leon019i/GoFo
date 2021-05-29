@@ -8,7 +8,7 @@ public class Team {
 
     String name;
     int teamNumber;
-    ArrayList<Player> playerArrayList= new ArrayList<Player>(11);
+    ArrayList<user> userArrayList = new ArrayList<user>(11);
 
 
     boolean isEmpty() {
@@ -17,9 +17,9 @@ public class Team {
     boolean isFull() {
         return false;
     }
-    void addPlayer(Player player1){
+    void addPlayer(user user1){
         if (teamNumber>=11) {
-            playerArrayList.add(player1);
+            userArrayList.add(user1);
         }
     }
 
