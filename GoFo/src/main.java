@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 public class main {
 
-
-
     public static void mainMenu() {
         System.out.println("Welcome to GoFo\n1-SignUp\n2-SignIn");
 
@@ -22,7 +20,6 @@ public class main {
 
     public static void main(String[] args) {
         user user1 =new user("loay","17  st dokki","Password","01098790730","loayfaiz@gmail.com");
-
         boolean flag = true;
         ArrayList<user> userArrayList =new ArrayList<>(5);
         userArrayList.add(user1);
@@ -77,5 +74,21 @@ public class main {
 
 
         }
+       /** Player p=new Player("yomna", "giza", "123", "0100", "yomnaali");
+        Playground p1 = new Playground("abc",true, 50.0, "giza", 20.0);
+        p1.Hours.add("10-12am");
+        p1.Hours.add("1-2am");
+        p1.Hours.add("4-5am");
+        p1.date.add("10/2");
+        p1.date.add("11/2");
+        p1.date.add("12/2");
+        p.bookPlayground(p1);
+        p1.freeSlots();*/
+
+
+
+
+
+
     }
 }
