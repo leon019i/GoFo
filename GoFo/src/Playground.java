@@ -26,6 +26,59 @@ public class Playground {
         Hours = new ArrayList<String>(0);
         date = new ArrayList<String>(0);
     }
+    
+     public void setName(){
+        this.name = name ; 
+    }
+    
+    public String getName(){
+        return name ; 
+    }
+    
+     public void setFreeSlots(){
+        this.freeSlots = freeSlots ; 
+    }
+    
+    public int getFreeSlots(){
+        return freeSlots ; 
+    }
+    
+    
+     public void setState(){
+        this.state = state ; 
+    }
+    
+    public boolean getState(){
+        return state ; 
+    }
+    
+    
+     public void setCost(){
+        this.cost = cost ; 
+    }
+    
+    public double getCost(){
+        return cost ; 
+    }
+    
+     public void setLocation(){
+        this.location = location ; 
+    }
+    
+    public String getLocation(){
+        return location ; 
+    }
+    
+    
+    public void setSize(){
+        this.size = size ; 
+    }
+    
+    public float getSize(){
+        return size ; 
+    }
+    
+    
    public void addFreeSlots (String Hour,String Date){
         Hours.add(Hour);
         date.add(Date);
