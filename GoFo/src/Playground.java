@@ -34,16 +34,7 @@ public class Playground {
     public String getName(){
         return name ; 
     }
-    
-     public void setFreeSlots(){
-        this.freeSlots = freeSlots ; 
-    }
-    
-    public int getFreeSlots(){
-        return freeSlots ; 
-    }
-    
-    
+
      public void setState(){
         this.state = state ; 
     }
@@ -74,7 +65,7 @@ public class Playground {
         this.size = size ; 
     }
     
-    public float getSize(){
+    public Double getSize(){
         return size ; 
     }
     

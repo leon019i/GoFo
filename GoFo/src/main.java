@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
-
     public static void mainMenu() {
         System.out.println("Welcome to GoFo\n1-SignUp\n2-SignIn");
 
@@ -11,7 +10,7 @@ public class main {
     public static void secondMenu(int choice) {
         if (choice == 1) {
             System.out.println("Enter your name and email and phone number and location and password");
-        }else if (choice==2){
+        }else if (choice == 2){
             System.out.println("Enter the email and password\nHint put ',' between the email and password");
         }else {
             System.out.println("invalid choice");
@@ -38,9 +37,21 @@ public class main {
                 phone=scanner.next();
                 location=scanner.next();
                 password=scanner.next();
-                user user3=new user("loay","17  st dokki","Password","01098790730","loayfaiz@gmail.com");
+                Player user3=new Player(name,location,password,phone,email);
                 userArrayList.add(user3);
                 System.out.println(userArrayList);
+                System.out.println("1-bookPlayground\n2-veiwPlaygrounds");
+                choice=scanner.nextInt();
+                if(choice==1){
+                    Playground p1 = new Playground("abc",true, 50.0, "giza", 20.0);
+                    p1.Hours.add("10-12am");
+                    p1.Hours.add("1-2am");
+                    p1.Hours.add("4-5am");
+                    p1.date.add("10/2");
+                    p1.date.add("11/2");
+                    p1.date.add("12/2");
+                    user3.bookPlayground(p1);
+                }
 
             }else if (choice==2){
                 System.out.println("Enter the email and password\nHint put ',' between the email and password");
@@ -57,7 +68,7 @@ public class main {
 //                        System.out.println("the credentials is not valid");
 //                    }
 //                }
-                for (user userSearch : userArrayList){
+  /**              for (user userSearch : userArrayList){
                     if (userSearch.getEmail()==email && userSearch.getPassword()==password){
                         System.out.println(userSearch);
                         System.out.println("done");
@@ -66,7 +77,7 @@ public class main {
                         System.out.println("failed");
                     }
                 }
-
+*/
             }else {
                 System.out.println("invalid choice");
 
@@ -74,16 +85,7 @@ public class main {
 
 
         }
-       /** Player p=new Player("yomna", "giza", "123", "0100", "yomnaali");
-        Playground p1 = new Playground("abc",true, 50.0, "giza", 20.0);
-        p1.Hours.add("10-12am");
-        p1.Hours.add("1-2am");
-        p1.Hours.add("4-5am");
-        p1.date.add("10/2");
-        p1.date.add("11/2");
-        p1.date.add("12/2");
-        p.bookPlayground(p1);
-        p1.freeSlots();*/
+
 
 
 
