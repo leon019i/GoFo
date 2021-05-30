@@ -1,5 +1,6 @@
 public class user {
     private String name, location, password, phone, email;
+    private int bookings ;
 
     public user(String name, String location, String password, String phone, String email) {
         this.name = name;
@@ -56,6 +57,14 @@ public class user {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+    
+    public void setBookings(int bookings) {
+        this.bookings = bookings;
+    }
+    
+    public int getBookings() {
+       return bookings ; 
     }
 
     @Override
