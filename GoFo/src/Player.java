@@ -40,5 +40,7 @@ public class Player extends user{
          int numOfslot= scanner.nextInt();
          playground.Hours.remove(numOfslot-1);
          playground.date.remove(numOfslot-1);
+
+
      }
 }

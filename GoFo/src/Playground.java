@@ -15,6 +15,7 @@ public class Playground {
          cost=0;
          location="";
          size=0;
+
      }
 
     public Playground(String name, boolean state, double cost, String location, double size) {
@@ -25,6 +26,7 @@ public class Playground {
         this.size = size;
         Hours = new ArrayList<String>(0);
         date = new ArrayList<String>(0);
+
     }
     
      public void setName(){
@@ -81,4 +83,8 @@ public class Playground {
     }
 
 
+    public String toString(){
+        return ("name"+name+'\n'+"size"+size+'\n'+"location"+location);
+
+    }
 }

@@ -32,6 +32,10 @@ public class Team {
             playerArrayList.add(player);
         }
     }
+    @Override
+    public String toString(){
+    return ("team number: "+teamNumber+'\n'+"team name: "+name);
+    }
 
 
 }
