@@ -35,16 +35,12 @@ public class Player extends user{
     }
      public void bookPlayground(Playground playground){
          playground.freeSlots();
-         if(playground.Hours.size()==0){
-             System.out.println("there are no free slots in the play ground");
-         }
-         else {
-             System.out.println("select the number of free slot you want");
-             Scanner scanner = new Scanner(System.in);
-             int numOfslot = scanner.nextInt();
-             playground.Hours.remove(numOfslot - 1);
-             playground.date.remove(numOfslot - 1);
-         }
+         System.out.println("select the number of free slot you want");
+         Scanner scanner = new Scanner(System.in);
+         int numOfslot= scanner.nextInt();
+         playground.Hours.remove(numOfslot-1);
+         playground.date.remove(numOfslot-1);
+
 
      }
 }

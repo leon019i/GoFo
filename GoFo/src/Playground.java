@@ -77,8 +77,13 @@ public class Playground {
         date.add(Date);
     }
     public void freeSlots (){
-        for(int i=0; i< Hours.size(); i++){
-            System.out.println("Time: "+Hours.get(i) +" "+"Date: "+ date.get(i));
+        if(Hours.size()==0){
+            System.out.println("there are no free slots");
+        }
+        else {
+            for (int i = 0; i < Hours.size(); i++) {
+                System.out.println("Time: " + Hours.get(i) + " " + "Date: " + date.get(i));
+            }
         }
     }
 
