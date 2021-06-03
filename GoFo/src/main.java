@@ -3,40 +3,61 @@ import java.util.Scanner;
 
 public class main {
     public static void mainMenu() {
-        System.out.println("Welcome to GoFo\n1-SignUp\n2-SignIn");
+        System.out.println("Welcome to GoFo\n1-SignUp as a player\n2-SignUp as a playground owner");
 
     }
 
     public static void secondMenu(int choice) {
+        String name, location, password, phone, email;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name and email and phone number and location and password");
+        name=scanner.next();
+        email=scanner.next();
+        phone=scanner.next();
+        location=scanner.next();
+        password=scanner.next();
         if (choice == 1) {
-            System.out.println("Enter your name and email and phone number and location and password");
+           Player player=new Player(name,email,phone,location,password);
+            ArrayList<Player> playerArrayList =new ArrayList<>(5);
+            playerArrayList.add(player);
+            System.out.println("1-book playground\n2-view play grounds");
+            choice=scanner.nextInt();
+            if(choice==1){
+
+            }
+            else if(choice==2){
+
+            }
+            else {
+                System.out.println("invalid choice");
+            }
         }else if (choice == 2){
-            System.out.println("Enter the email and password\nHint put ',' between the email and password");
+            //System.out.println("Enter the email and password\nHint put ',' between the email and password");
+            PlaygroundOwner owner =new PlaygroundOwner(name,email,phone,location,password);
+            ArrayList<PlaygroundOwner> ownerArrayList =new ArrayList<>(5);
+            ownerArrayList.add(owner);
+            System.out.println("1-add play ground\n2-view play ground");
+            Playground playground;
         }else {
             System.out.println("invalid choice");
         }
     }
 
     public static void main(String[] args) {
-        user user1 =new user("loay","17  st dokki","Password","01098790730","loayfaiz@gmail.com");
+        //user user1 =new user("loay","17  st dokki","Password","01098790730","loayfaiz@gmail.com");
         boolean flag = true;
-        ArrayList<user> userArrayList =new ArrayList<>(5);
-        userArrayList.add(user1);
+
         while (flag) {
-            System.out.println(userArrayList);
+            //System.out.println(userArrayList);
             int choice;
-            String name, location, password, phone, email;
+
             boolean valid=false;
-            Scanner scanner = new Scanner(System.in);
+
             mainMenu();
-            choice = scanner.nextInt();
-            if (choice == 1) {
-                System.out.println("Enter your name and email and phone number and location and password\nHint press enter after typing each credential");
-                name=scanner.next();
-                email=scanner.next();
-                phone=scanner.next();
-                location=scanner.next();
-                password=scanner.next();
+           // choice = scanner.nextInt();
+       /*     if (choice == 1) {
+              //  System.out.println("Enter your name and email and phone number and location and password\nHint press enter after typing each credential");
+
                 Player user3=new Player(name,location,password,phone,email);
                 userArrayList.add(user3);
                 System.out.println(userArrayList);
@@ -81,11 +102,11 @@ public class main {
                     }
                 }
 */
-            }else {
+   /*         }else {
                 System.out.println("invalid choice");
 
             }
-
+*/
 
         }
 

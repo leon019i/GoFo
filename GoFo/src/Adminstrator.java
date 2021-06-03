@@ -1,6 +1,6 @@
 
 import java.util.ArrayList;
-
+import java.util.WeakHashMap;
 
 public class Adminstrator extends user {
     ArrayList<Playground> playgroundArrayList=new ArrayList<Playground>();
@@ -11,13 +11,13 @@ public class Adminstrator extends user {
     }
     
     public void activatePlayground(Playground playground){
-       Playground playground1 = null ;
+      // Playground playground1 = null ;
        boolean suspended = true , activated = false ; 
-       suspended = playground1.getState();
+       suspended = playground.getState();
        if(this.getBookings()!=2)
-          activated = playground1.getState();
+          activated = playground.getState();
           
-        
+
     }
     
     public boolean suspendPlayground(boolean state){
@@ -34,8 +34,8 @@ public class Adminstrator extends user {
       playgroundArrayList.remove(playground);
     }
     
-    public void viewAllWallets(){
-     
+    public Wallet viewAllWallets(){
+
     }
     
 }

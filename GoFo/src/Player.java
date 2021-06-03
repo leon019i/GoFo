@@ -38,7 +38,17 @@ public class Player extends user{
          System.out.println("select the number of free slot you want");
          Scanner scanner = new Scanner(System.in);
 
-
-
      }
+
+    public void joinTeam(String nickName,Team team) {
+          if(team.isEmpty()==true) {
+              team.toString();
+              team.addPlayer(this);
+          }
+          else{
+              System.out.println("sorry team is full");
+          }
+
+
+    }
 }
