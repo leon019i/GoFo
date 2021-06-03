@@ -14,28 +14,31 @@ public class Adminstrator extends user {
       // Playground playground1 = null ;
        boolean suspended = true , activated = false ; 
        suspended = playground.getState();
-       if(this.getBookings()!=2)
+        
+      for(int i=0;i< playground.Hours.size();i++)
+           if(playground.Hours.get(i).equals(playground.Hours.get(i+1)))
+        
           activated = playground.getState();
           
 
     }
     
     public boolean suspendPlayground(boolean state){
-        Playground playground1 = null ; 
-        boolean active = true ; 
-        active = playground1.getState() ;
-       if( this.getBookings() ==2)
-           return !active ; 
-       else 
-           return active ; 
+       
+        return state; 
+        
     }
     
     public void deletePlayground(Playground playground){
       playgroundArrayList.remove(playground);
     }
     
-    public Wallet viewAllWallets(){
-
+   public void viewAllWallets(Player player, PlaygroundOwner playgroundOwner){
+        
+     player.checkMoney();
+     playgroundOwner.checkMoney();
+       
+     
     }
     
 }
