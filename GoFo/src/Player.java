@@ -31,7 +31,7 @@ public class Player extends user{
     }
 
     public void checkMoney(){
-        System.out.println("Your money is: "+wallet.getMoney());
+        System.out.println("Player money is: "+wallet.getMoney());
     }
      public void bookPlayground(Playground playground){
          playground.freeSlots();
