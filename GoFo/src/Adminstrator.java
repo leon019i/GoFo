@@ -2,8 +2,8 @@
 import java.util.ArrayList;
 
 
-public class Adminstrator extends User {
-     ArrayList<Playground> playgroundArrayList=new ArrayList<Playground>();
+public class Adminstrator extends user {
+    ArrayList<Playground> playgroundArrayList=new ArrayList<Playground>();
     private Wallet wallet; 
     
     public Adminstrator(String name,String location , String password ,String phone,String email ){
@@ -34,7 +34,7 @@ public class Adminstrator extends User {
       playgroundArrayList.remove(playground);
     }
     
-    public Wallet viewAllWallets(){
+    public void viewAllWallets(){
      
     }
     

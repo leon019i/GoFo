@@ -1,4 +1,4 @@
-public class user {
+public class user implements Iuser {
     private String name, location, password, phone, email;
     private int bookings ;
 
@@ -62,7 +62,7 @@ public class user {
     public void setBookings(int bookings) {
         this.bookings = bookings;
     }
-    
+
     public int getBookings() {
        return bookings ; 
     }

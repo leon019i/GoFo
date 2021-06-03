@@ -37,9 +37,7 @@ public class Player extends user{
          playground.freeSlots();
          System.out.println("select the number of free slot you want");
          Scanner scanner = new Scanner(System.in);
-         int numOfslot= scanner.nextInt();
-         playground.Hours.remove(numOfslot-1);
-         playground.date.remove(numOfslot-1);
+
 
 
      }

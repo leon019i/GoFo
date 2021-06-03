@@ -51,6 +51,9 @@ public class main {
                     p1.date.add("11/2");
                     p1.date.add("12/2");
                     user3.bookPlayground(p1);
+                    int numOfslot= scanner.nextInt();
+                   // p1.Hours.remove(numOfslot-1);
+                   // p1.date.remove(numOfslot-1);
                 }
 
             }else if (choice==2){
