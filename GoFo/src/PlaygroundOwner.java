@@ -18,7 +18,7 @@ public class PlaygroundOwner extends user{
     void viewPlaygrounds(){
         System.out.println(playgroundArrayList);
     }
-    public void checkMoney(){
-        System.out.println("Your money is: "+wallet.getMoney());
+     public void checkMoney(){
+        System.out.println("Playground Owner money is: "+this.wallet.getMoney());
     }
 }
