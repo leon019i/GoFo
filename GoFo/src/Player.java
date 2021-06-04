@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Player extends user{
     private Team team;
     private Wallet wallet;
