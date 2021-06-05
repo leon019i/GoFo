@@ -1,38 +1,71 @@
 import java.util.Scanner;
 
+/**
+ * @author loay fayez id:20190396
+ * @version 1.0
+ */
 public class Player extends user{
     private Team team;
     private Wallet wallet;
 
+    /**
+     * A default constructor initializes the player with null values
+     */
       public Player(){
             team=null;
             wallet=null;
 
       }
+
+    /**
+     * gets the team the player in
+     * @return an object of team for the player's team
+     */
     public Team getTeam() {
         return team;
     }
 
+    /**
+     * sets the team for the player
+     * @param team1 an container for player's team
+     */
     public void setTeam(Team team1) {
         team = team1;
     }
 
+    /**
+     * a paramitrized constructor that creates a object with a specific credentials
+     * @param name contains the player name
+     * @param location contains the player location
+     * @param password contains the player location
+     * @param phone contains thr player's phone number
+     * @param email contains the player's email
+     * @param team1 contain the player's team
+     */
     public Player(String name, String location, String password, String phone, String email, Team team1) {
         super(name, location, password, phone, email);
         team = team1;
     }
 
+    /**
+     * a constractor fro the player with the players team
+     * @param team1 contains the player's team
+     */
     public Player(Team team1) {
         team = team1;
     }
 
-    public Player(String name, String location, String password, String phone, String email) {
-        super(name, location, password, phone, email);
-    }
-
+    /**
+     * method prints the player's wallet and money
+     */
     public void checkMoney(){
         System.out.println("Your money is: "+wallet.getMoney());
     }
+
+    /**
+     * a method books a playground to the user
+     * @param playground contains the playgrounds the player chosen
+     */
      public void bookPlayground(Playground playground){
          playground.freeSlots();
          System.out.println("select the number of free slot you want");
