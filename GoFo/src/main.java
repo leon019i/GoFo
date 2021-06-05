@@ -61,11 +61,11 @@ public class main {
                 Player user3=new Player(name,location,password,phone,email);
                 userArrayList.add(user3);
                 System.out.println(userArrayList);
-                System.out.println("1-bookPlayground\n2-veiwPlaygrounds");
+                System.out.println("1-bookPlayground\n2-viewPlaygrounds");
                 choice=scanner.nextInt();
                 if(choice==1){
                     Playground p1 = new Playground("abc",true, 50.0, "giza", 20.0);
-                    p1.Hours.add("10-12am");
+                    p1.Hours.add("1-10-12am");
                     p1.Hours.add("1-2am");
                     p1.Hours.add("4-5am");
                     p1.date.add("10/2");

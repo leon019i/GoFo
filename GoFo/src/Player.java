@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Player extends user{
     private Team team;
     private Wallet wallet;
@@ -32,24 +31,16 @@ public class Player extends user{
     }
 
     public void checkMoney(){
-        System.out.println("Player money is: "+wallet.getMoney());
+        System.out.println("Your money is: "+wallet.getMoney());
     }
      public void bookPlayground(Playground playground){
          playground.freeSlots();
          System.out.println("select the number of free slot you want");
          Scanner scanner = new Scanner(System.in);
+         int numOfslot= scanner.nextInt();
+         playground.Hours.remove(numOfslot-1);
+         playground.date.remove(numOfslot-1);
+
 
      }
-
-    public void joinTeam(String nickName,Team team) {
-          if(team.isEmpty()==true) {
-              team.toString();
-              team.addPlayer(this);
-          }
-          else{
-              System.out.println("sorry team is full");
-          }
-
-
-    }
 }
