@@ -17,7 +17,7 @@ public class main {
         location=scanner.next();
         password=scanner.next();
         if (choice == 1) {
-           Player player=new Player(name,email,phone,location,password);
+           Player player=new Player(name,location,password,phone,email);
             ArrayList<Player> playerArrayList =new ArrayList<>(5);
             playerArrayList.add(player);
             System.out.println("1-book playground\n2-view play grounds");

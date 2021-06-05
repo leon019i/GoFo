@@ -47,8 +47,23 @@ public class Player extends user{
         team = team1;
     }
 
+    public Player(String name, String location, String password, String phone, String email) {
+        super(name, location, password, phone, email);
+    }
+
+    public Player(String name, String location, String password, String phone, String email, Team team, Wallet wallet) {
+        super(name, location, password, phone, email);
+        this.team = team;
+        this.wallet = wallet;
+    }
+
+    public Player(Team team, Wallet wallet) {
+        this.team = team;
+        this.wallet = wallet;
+    }
+
     /**
-     * a constractor fro the player with the players team
+     * a constructor fro the player with the players team
      * @param team1 contains the player's team
      */
     public Player(Team team1) {
