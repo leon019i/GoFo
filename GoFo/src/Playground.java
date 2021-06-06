@@ -8,8 +8,9 @@ import java.util.ArrayList;
  */
 public class Playground {
     String name;
-    ArrayList<String> Hours;
-    ArrayList<String> date ;
+    ArrayList<String> Hours =new ArrayList<String>(2);
+
+    ArrayList<String> date=new ArrayList<String>(2);
     boolean state;
     double cost;
     String location;
@@ -41,8 +42,6 @@ public class Playground {
         this.cost = cost;
         this.location = location;
         this.size = size;
-        Hours = new ArrayList<String>(0);
-        date = new ArrayList<String>(0);
 
     }
     
@@ -143,7 +142,8 @@ public class Playground {
         }
         else {
             for (int i = 0; i < Hours.size(); i++) {
-                System.out.println("Time: " + Hours.get(i) + " " + "Date: " + date.get(i));
+                System.out.println((i+1)+"-Time: " + Hours.get(i) + " " + "Date: " + date.get(i));
+                System.out.println("-------------------------");
             }
         }
     }
@@ -153,7 +153,7 @@ public class Playground {
      * @return returns name , size , and location of the playground 
      */
     public String toString(){
-        return ("name"+name+'\n'+"size"+size+'\n'+"location"+location);
+        return ("name: "+name+'\n'+"size: "+size+'\n'+"location: "+location+'\n'+"cost: "+cost);
 
     }
 }

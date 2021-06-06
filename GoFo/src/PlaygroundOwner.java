@@ -36,8 +36,11 @@ public class PlaygroundOwner extends user{
     /**
      * method to view the playgrounds
      */
-    void viewPlaygrounds(){
-        System.out.println(playgroundArrayList);
+    void viewPlaygrounds() {
+        for (int i = 0; i < playgroundArrayList.size(); i++) {
+            System.out.println((i+1)+"-"+playgroundArrayList.get(i));
+            System.out.println("---------------------------");
+        }
     }
 
     /**
