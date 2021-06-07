@@ -81,27 +81,6 @@ public class main {
                  }
              }
 
-//                for (int i = 0; i<= userArrayList.size(); i++){
-//                    if (userArrayList.get(i).getEmail()==email && userArrayList.get(i).getPassword()==password){
-//                        valid=true;
-//                        System.out.println(userArrayList.get(i));
-//                    }else if (valid){
-//                        break;
-//                    }
-//                    else {
-//                        System.out.println("the credentials is not valid");
-//                    }
-//                }
-                /**              for (user userSearch : userArrayList){
-                 if (userSearch.getEmail()==email && userSearch.getPassword()==password){
-                 System.out.println(userSearch);
-                 System.out.println("done");
-                 }
-                 else {
-                 System.out.println("failed");
-                 }
-                 }
-                 */
             }
 
 
