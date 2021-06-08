@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/**
+ * class playground owner which has all the information of the play ground owner
+ * @author yomna mahmoud abd el wahab
+ * @version 1.0
+ */
 public class PlaygroundOwner extends user{
     private Wallet wallet;
     ArrayList<Playground> playgroundArrayList=new ArrayList<Playground>();

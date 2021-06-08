@@ -1,7 +1,17 @@
 import java.util.Scanner;
+
+/**
+ * @author loay fayez ,yomna mahmoud, nada mousa
+ * @version 1.0
+ */
 public class main {
      public static Player player;
      public  static PlaygroundOwner owner;
+
+    /**
+     * method to make the user able to sign up
+     * @param choice that the user choose
+     */
     public static void Menu(int choice) {
         Scanner scanner = new Scanner(System.in);
         String name, location, password, phone, email;

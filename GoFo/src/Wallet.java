@@ -3,8 +3,8 @@
 /**
  * Class Wallet represents the balance in each user of the system's e-Wallet
  * 
- * @author 
- * 
+ * @author nada mousa abd el aziz
+ * @version 1.0
  */
 public class Wallet {
     private double money;

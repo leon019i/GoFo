@@ -3,8 +3,7 @@ import java.util.ArrayList;
 /**
  * This Class represents the playground in the system and all the functionalities related to it such as:adding free slots
  * and displaying name , size , and location of the playground
- * 
- * @author 
+ * @author nada mousa abd el aziz
  */
 public class Playground {
     String name;
@@ -149,7 +148,7 @@ public class Playground {
     }
 
      /**
-     * 
+     *
      * @return returns name , size , and location of the playground 
      */
     public String toString(){

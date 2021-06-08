@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 /**
  * class Team that has a relation with the player
+ * @author yomna mahmoud abd el wahab
+ * @version 1.0
  */
 public class Team {
     /**
