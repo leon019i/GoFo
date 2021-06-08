@@ -1,11 +1,11 @@
-
 import java.util.ArrayList;
-import java.util.WeakHashMap;
+
 
 /**
  * This class represents all the functionalities that the administrator does in the system such as : activating a playground , deleting a playground,etc 
  * 
  * @author Nada Mousa Abdelaziz
+ * @version 1.0
  */
 public class Adminstrator extends user {
     ArrayList<Playground> playgroundArrayList=new ArrayList<Playground>();

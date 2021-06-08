@@ -4,6 +4,7 @@ import java.util.ArrayList;
  * This Class represents the playground in the system and all the functionalities related to it such as:adding free slots
  * and displaying name , size , and location of the playground
  * @author nada mousa abd el aziz
+ * @version 1.0
  */
 public class Playground {
     String name;
