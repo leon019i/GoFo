@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * This class represents all the functionalities that the administrator does in the system such as : activating a playground , deleting a playground,etc 
  * 
  * @author Nada Mousa Abdelaziz
- * @version 1.0
+ * @version 1.8
  */
 public class Adminstrator extends user {
     ArrayList<Playground> playgroundArrayList=new ArrayList<Playground>();

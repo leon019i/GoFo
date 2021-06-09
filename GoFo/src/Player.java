@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * @author loay fayez id:20190396
- * @version 1.0
+ * @version 1.8
  */
 public class Player extends user{
     private Team team;

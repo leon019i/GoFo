@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * @author loay fayez ,yomna mahmoud, nada mousa
- * @version 1.0
+ * @version 1.8
  */
 public class main {
      public static Player player;
