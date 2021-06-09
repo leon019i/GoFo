@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"<Unnamed>","l":"Adminstrator"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Iuser"},{"p":"<Unnamed>","l":"main"},{"p":"<Unnamed>","l":"Player"},{"p":"<Unnamed>","l":"Playground"},{"p":"<Unnamed>","l":"PlaygroundOwner"},{"p":"<Unnamed>","l":"Team"},{"p":"<Unnamed>","l":"user"},{"p":"<Unnamed>","l":"Wallet"}];updateSearchResults();
